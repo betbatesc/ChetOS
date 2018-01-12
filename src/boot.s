@@ -6,7 +6,6 @@ MBOOT_HEADER_MAGIC  equ 0x1BADB002 ; Multiboot Magic value
 MBOOT_HEADER_FLAGS  equ MBOOT_PAGE_ALIGN | MBOOT_MEM_INFO
 MBOOT_CHECKSUM      equ -(MBOOT_HEADER_MAGIC + MBOOT_HEADER_FLAGS)
 
-
 [BITS 32]                       ; All instructions should be 32-bit.
 
 [GLOBAL mboot]                  ; Make 'mboot' accessible from C.
